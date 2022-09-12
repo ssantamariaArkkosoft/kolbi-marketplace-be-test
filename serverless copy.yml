@@ -1,0 +1,19 @@
+apiVersion: v1
+clusters:
+- cluster:
+    certificate-authority-data: LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUJpRENDQVM2Z0F3SUJBZ0lCQURBS0JnZ3Foa2pPUFFRREFqQTdNUnd3R2dZRFZRUUtFeE5rZVc1aGJXbGoKYkdsemRHVnVaWEl0YjNKbk1Sc3dHUVlEVlFRREV4SmtlVzVoYldsamJHbHpkR1Z1WlhJdFkyRXdIaGNOTWpBeApNVEkyTWpJeE5qSXpXaGNOTXpBeE1USTBNakl4TmpJeldqQTdNUnd3R2dZRFZRUUtFeE5rZVc1aGJXbGpiR2x6CmRHVnVaWEl0YjNKbk1Sc3dHUVlEVlFRREV4SmtlVzVoYldsamJHbHpkR1Z1WlhJdFkyRXdXVEFUQmdjcWhrak8KUFFJQkJnZ3Foa2pPUFFNQkJ3TkNBQVNSeDdsTzJRRlMrMkZtNW5SU2xEVXhJMVBTbWRLbEFjTVp3N1RtWDJHRwpCU3o0cUVkT2hZUVVkZlZDRzZPd2RtMlNwU2lpK0hkZE5ycTZWWnZkczl6Mm95TXdJVEFPQmdOVkhROEJBZjhFCkJBTUNBcVF3RHdZRFZSMFRBUUgvQkFVd0F3RUIvekFLQmdncWhrak9QUVFEQWdOSUFEQkZBaUVBMVBLbXdTRUwKbWlSUEV4c29ETlRnell1dkxwMlNKNUQ4ZDl4ZDVlWWtvNzBDSUZMUnYvUVZXQW1CZEdKb2hrZG42THIyMlVCVgo2ajNHNFhqbnpOckxwc2hSCi0tLS0tRU5EIENFUlRJRklDQVRFLS0tLS0=
+    server: https://rancher.ice.go.cr/k8s/clusters/c-xl7dt
+    name: knative
+contexts:
+- context:
+    cluster: knative
+    namespace: knative-serving
+    user: knative
+    name: knative
+current-context: knative
+kind: Config
+preferences: {}
+users:
+- name: knative
+  user:
+    token: kubeconfig-u-aqkqa54kdfbnfgg:j2bq9l5fgqt7f2c629wwv4k2srprqnsxqnh5jmg5rqb9xc86gdlmjv
